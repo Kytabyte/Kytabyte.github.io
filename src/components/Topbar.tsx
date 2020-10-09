@@ -5,10 +5,6 @@ import Nav from "react-bootstrap/Nav";
 
 import * as Constant from "../Constant";
 
-const makeurl = (url: string) => {
-  return process.env.PUBLIC_URL + url;
-}
-
 class Topbar extends React.Component {
  render() {
   return (
@@ -19,9 +15,9 @@ class Topbar extends React.Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav style={{marginRight: "20px"}} className="ml-auto">
-            <Nav.Link href={makeurl("/")}>Home</Nav.Link>
-            <Nav.Link href={makeurl("/blog")}>Blog</Nav.Link>
-            <Nav.Link href={makeurl("/project")}>Project</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/#/blog">Blog</Nav.Link>
+            <Nav.Link href="/#/project">Project</Nav.Link>
             <Nav.Link href={Constant.GithubUrl}>GitHub</Nav.Link>
             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
