@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
 import * as Constant from "../Constant";
+import { Link } from "react-router-dom";
 
 class Topbar extends React.Component {
  render() {
@@ -15,9 +16,9 @@ class Topbar extends React.Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav style={{marginRight: "20px"}} className="ml-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/#/blog">Blog</Nav.Link>
-            <Nav.Link href="/#/project">Project</Nav.Link>
+            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
+            <Nav.Link as={Link} to="/project">Project</Nav.Link>
             <Nav.Link href={Constant.GithubUrl}>GitHub</Nav.Link>
             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
