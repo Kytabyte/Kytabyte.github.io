@@ -16,8 +16,8 @@ class Topbar extends React.Component {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav style={{marginRight: "20px"}} className="ml-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/blog">Blog</Nav.Link>
-            <Nav.Link href="/project">Project</Nav.Link>
+            <Nav.Link href="/#/blog">Blog</Nav.Link>
+            <Nav.Link href="/#/project">Project</Nav.Link>
             <Nav.Link href={Constant.GithubUrl}>GitHub</Nav.Link>
             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
