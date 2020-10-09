@@ -1,20 +1,9 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useParams,
-} from "react-router-dom";
 
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import { Button, Form, FormControl } from 'react-bootstrap';
 
 import * as Constant from "../Constant";
-import Home from "./Home";
-import Blog from "./Blog";
-import Project from "./Project";
 
 class Topbar extends React.Component {
  render() {
