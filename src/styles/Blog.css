@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+
+.entry-row {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    position:relative;
+    columns: 2 auto;
+    text-align: center;
+}
+
+.entry-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.entry-col {
+    margin-left: 100px;
+    margin-right: 50px;
+    background-color: white;
+}

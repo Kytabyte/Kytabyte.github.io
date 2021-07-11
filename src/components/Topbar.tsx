@@ -11,8 +11,8 @@ class Topbar extends React.Component {
   return (
     <div className="row">
       <div className="col-md-12">
-        <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
-          <Navbar.Brand style={{marginLeft: "20px"}} href="/">Kytabyte</Navbar.Brand>
+        <Navbar bg="dark" variant="dark" expand="lg"> 
+          <Navbar.Brand style={{marginLeft: "24px"}} href="/">Kytabyte</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav style={{marginRight: "20px"}} className="ml-auto">

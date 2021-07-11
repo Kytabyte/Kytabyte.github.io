@@ -4,16 +4,19 @@ import { Container } from "react-bootstrap";
 import Topbar from "./Topbar";
 
 class Project extends React.Component<object, object> {
+  componentDidMount() {
+    document.title = "Kytabyte's Project";
+  }
+
   render() {
     return (
       <div>
         <Topbar />
+        <h1>
+            Welcome to my projects!
+        </h1>
         <br />
-          <Container className="justify-content-md-center">
-            <h1>
-                Welcome to my projects!
-            </h1>
-          </Container>
+        <p style={{textAlign: "center"}}>Unfortunately, I haven't summary up any project here...</p>
       </div>
    );
   }

@@ -2,18 +2,27 @@ import React from "react";
 import { Container } from "react-bootstrap";
 
 import Topbar from "./Topbar";
+import Timeline from "./Timeline"
 
 class Home extends React.Component<object, object> {
+  componentDidMount() {
+    document.title = "Kytabyte's Home";
+  }
+
   render() {
     return (
       <div>
         <Topbar />
-        <br />
-          <Container className="justify-content-md-center">
-            <h1>
-                Welcome to my page!
-            </h1>
-          </Container>
+        <div>
+          <h1>
+              Welcome to my page!
+          </h1>
+          <br />
+          <p style={{textAlign: "center"}}>
+            Hello, My name is Kyle Xie, I am currently a software engineer at Google.
+          </p>
+          <Timeline />
+        </div>
       </div>
    );
   }

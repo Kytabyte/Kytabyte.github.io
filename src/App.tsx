@@ -5,10 +5,6 @@ import Home from './components/Home'
 import Project from './components/Project';
 
 class App extends React.Component<object, object> {
-  componentDidMount() {
-    document.title = "Kytabyte's Home";
-  }
-
   render() {
     return (
       <>
