@@ -1,5 +1,4 @@
-import React, { ReactElement } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from "react";
 
 import "../styles/Blog.css";
 import Topbar from "./Topbar";
@@ -26,7 +25,7 @@ class Blog extends React.Component<object, object> {
     let blogCount = blogCoverEntry.length;
     let blogCountRows = Math.ceil(blogCoverEntry.length/2);
 
-    if (blogCount == 0) {
+    if (blogCount === 0) {
       return (
         <div>
           <Topbar />
